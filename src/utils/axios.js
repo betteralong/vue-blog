@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  // baseURL: 'http://www.betteralong.top/'
   baseURL: 'http://localhost:5000/'
 })
 

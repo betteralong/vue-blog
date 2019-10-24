@@ -9,64 +9,6 @@
           <friend-item :friendData="item"></friend-item>
         </el-col>
       </el-row>
-      <!-- <el-row :gutter="30">
-        <el-col :xs="24"  :sm="12" :lg="8">
-          <div class="link-item">
-            <div class="link-item-inner">
-              <div class="link-content">
-                <img src="@/assets/img/avart.png" />
-                <div class="content-wrap">
-                  <h1 class="link-name">1号选手</h1>
-                  <p class="link-text">我不是大佬，只是在追寻大佬的脚步</p>
-                </div>
-              </div>
-            </div>
-            <a class="link-btn" href="http://wwww.baidu.com">前往参观</a>
-          </div>
-        </el-col>
-        <el-col :xs="24"  :sm="12" :lg="8">
-          <div class="link-item" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-            <div class="link-item-inner">
-              <div class="link-content">
-                <img src="@/assets/img/avart.png" />
-                <div class="content-wrap">
-                  <h1 class="link-name">2号选手</h1>
-                  <p class="link-text">我不是大佬，只是在追寻大佬的脚步</p>
-                </div>
-              </div>
-            </div>
-            <a class="link-btn" href="http://wwww.baidu.com">前往参观</a>
-          </div>
-        </el-col>
-        <el-col :xs="24"  :sm="12" :lg="8">
-          <div class="link-item" style="background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);">
-            <div class="link-item-inner">
-              <div class="link-content">
-                <img src="@/assets/img/avart.png" />
-                <div class="content-wrap">
-                  <h1 class="link-name">3号选手</h1>
-                  <p class="link-text">我不是大佬，只是在追寻大佬的脚步</p>
-                </div>
-              </div>
-            </div>
-            <a class="link-btn" href="http://wwww.baidu.com">前往参观</a>
-          </div>
-        </el-col>
-        <el-col :xs="24"  :sm="12" :lg="8">
-          <div class="link-item" style="background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)">
-            <div class="link-item-inner">
-              <div class="link-content">
-                <img src="@/assets/img/avart.png" />
-                <div class="content-wrap">
-                  <h1 class="link-name">4号选手</h1>
-                  <p class="link-text">我不是大佬，只是在追寻大佬的脚步</p>
-                </div>
-              </div>
-            </div>
-            <a class="link-btn" href="http://wwww.baidu.com">前往参观</a>
-          </div>
-        </el-col>
-      </el-row> -->
     </div>
   </div>
 </template>

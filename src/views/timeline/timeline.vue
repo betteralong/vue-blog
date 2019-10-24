@@ -64,13 +64,14 @@ export default {
   .time-line-content{
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.2rem;
     >img{
-      width: 100px;
-      height: 100px;
+      width: 6rem;
+      height: 6rem;;
     }
     >p{
-      padding-left: 20px;
+      font-size: 1rem;
+      padding-left: 1rem;
     }
   }
   .timeline-content-bottom{

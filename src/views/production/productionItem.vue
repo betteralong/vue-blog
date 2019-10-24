@@ -63,7 +63,7 @@ export default {
     background: #fff;
   }
   .production-content{
-    height: 200px;;
+    height: 204px;;
     border-bottom: 2px solid#eee;
     .production-img{
       display: flex;
@@ -86,10 +86,14 @@ export default {
     .production-desc{
       font-size: 1rem;
       line-height: 1.4rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
     }
   }
   .production-btn-group{
-    height: 40px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -14,10 +14,12 @@
         <div class="article-list-wrap">
           <el-row :gutter="30">
             <el-col :xs="24"  :sm="12" :lg="8" v-for="(item, index) in articleList" :key="index">
-              <div class="article-list-item" @click="handleDetail(item)">
-                <div class="art-img">
-                  <img :src="item.cover"/>
-                  <div class="article-title">{{item.title || ''}}</div>
+              <div class="article-list-item">
+                <div class="art-img"  :style='{backgroundImage: "url("+ item.cover + ")"}' @click="handleDetail(item)" >
+                  <div class="article-body">
+                    <div class="article-title">{{item.title || ''}}</div>
+                    <div class="article-brief">{{item.brief || ''}}</div>
+                  </div>
                 </div>
                 <div class="article-desc">
                   <div class="article-time">{{getTime(item.create_time)}}</div>
@@ -133,24 +135,54 @@ export default {
       margin-bottom: 1.2rem;
       cursor: pointer;
       .art-img{
+        border-radius: 8px;
         position: relative;
         height: 220px;
-        img{
-          border-radius: 20px;
-          display: block;
-          height: 100%;
+        background-size: 100% 100%;
+        &::before{
+          position: absolute;
+          z-index: 0;
           width: 100%;
-          opacity: 0.9;
+          height: 100%;
+          display: block;
+          left: 0;
+          top: 0;
+          content: "";
+          background-color: rgba(0, 0, 0, .2);
+          border-radius: 10px;
+        }
+        .article-body{
+          position: relative;
+          z-index: 2;
+          padding: 1.8rem 1.25rem;
         }
         .article-title{
-          position: absolute;
           font-size: 1.2rem;
           font-weight: 600;
           color: #fff;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          text-align: center;
+          margin-bottom: 1.2rem;
         }
+        .article-brief{
+          font-size: 1rem;
+          color: #fff;
+        }
+        // img{
+        //   border-radius: 20px;
+        //   display: block;
+        //   height: 100%;
+        //   width: 100%;
+        //   opacity: 0.9;
+        // }
+        // .article-title{
+        //   position: absolute;
+        //   font-size: 1.2rem;
+        //   font-weight: 600;
+        //   color: #fff;
+        //   top: 50%;
+        //   left: 50%;
+        //   transform: translate(-50%, -50%);
+        // }
       }
       .article-desc{
         display: flex;
